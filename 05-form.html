@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="05-form.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <!-- Anrede -->
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    Anrede: 
+                </div>
+                <div class="col-md-5 col-sm-6 col-6">
+                    <label>
+                        <input type="radio" name="anrede"> Herr
+                    </label>
+                </div>
+                <div class="col-md-5 col-sm-6 col-6">
+                    <label>
+                        <input type="radio" name="anrede"> Frau
+                    </label>
+                </div>
+            </div>
+
+            <!-- Vorname -->
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="lname">Vorname:</label>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="vorname" name="vorname" placeholder="Max" autofocus>
+                </div>
+            </div>
+            
+            <!-- Name -->
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="lname">Name:</label>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="name" name="Name" placeholder="Muster">
+                </div>
+            </div>
+            <!-- Datum: -->
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="lname">Datum:</label>
+                </div>
+                <div class="col-md-10">
+                    <input type="date" id="Datum" name="Datum" placeholder="date">
+                </div>
+            </div>
+            <!-- Strasse: -->
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="lname">Strasse:</label>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="street" name="street" placeholder="Musterstrasse 12">
+                </div>
+            </div>
+            <!-- PLZ: -->
+            <div class="row">
+                <div class="col-md-2">
+                    PLZ:
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="plz" placeholder="8320">
+                </div>
+                <div class="col-md-2">
+                    Ort:
+                </div>
+                <div class="col-md-5">
+                    <input type="text" name="ort" placeholder="Fehraltdorf">
+                </div>
+            </div>
+            <!-- Land -->
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="lname">Land:</label>
+                </div>
+                <div class="col-md-10 land">
+                    <select name="Name">
+                        <option value="" selected disabled>Wählen Sie ein Land aus</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="RO">Romania</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
